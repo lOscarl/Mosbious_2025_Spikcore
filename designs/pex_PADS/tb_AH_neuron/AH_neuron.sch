@@ -76,7 +76,7 @@ C {devices/code_shown.sym} -95 280 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 100u 15m
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/AH_neuron/AH_neuron_pex.spice
-.include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
+.include /foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
 .param vd_v=3.3
 .save allcurrents
 .options save currents
@@ -102,6 +102,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 "}
 C {lab_pin.sym} 50 60 1 0 {name=p6 sig_type=std_logic lab=ASIG}
 C {launcher.sym} 460 210 0 0 {name=h5

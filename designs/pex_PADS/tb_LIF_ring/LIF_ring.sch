@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 -160 -590 640 -190 {flags=graph
+B 2 -60 -650 740 -250 {flags=graph
 y1=-1.5e-05
 y2=1.7
 ypos1=0
@@ -25,7 +25,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 -70 -170 730 230 {flags=graph
+B 2 -60 -250 740 150 {flags=graph
 y1=0.58
 y2=0.83
 ypos1=0
@@ -74,17 +74,18 @@ C {devices/code_shown.sym} -910 -530 0 0 {name=s1 only_toplevel=false value="
 spice_ignore=False}
 C {lab_pin.sym} -480 -530 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {ammeter.sym} -480 -490 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
-C {devices/code_shown.sym} -900 -220 0 0 {name=MODELS1 only_toplevel=true
+C {devices/code_shown.sym} -1330 -20 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/LIF_ring/LIF_ring_pex.spice
-.include "/foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice"
+.include "/foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice"
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 "}
 C {res.sym} -480 -430 0 0 {name=R1
 value=10

@@ -28,8 +28,8 @@ logx=0
 logy=0
 }
 B 2 750 -1670 1550 -1270 {flags=graph
-y1=0.3
-y2=3.3
+y1=-1.5
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
@@ -84,6 +84,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 "}
 C {launcher.sym} 600 -1090 0 0 {name=h5
 descr="load waves" 
